@@ -1,4 +1,9 @@
-# Simple CV
+# Simple CV  
+- スキル・取り組んだプロジェクトについて纏めています
+
+## Skills
+- Python, Tensorflow, Pytorch, Scikit-learnなどを利用したデータ分析・機械学習プロジェクトの経験
+- git, dockerによるコード管理・環境構築
 
 ## プロジェクト概要
 ### Dota2というMOBAゲームのデータ分析
@@ -48,12 +53,12 @@
 ## あなたが取り組んだ内容
 ### モデル作成
 - Semantic Segmentation, Object Detectionのそれぞれについて実装した
-- ネットワークとしてはDense-UNet, YOLOv3を採用
+- ネットワークとしてはUNet-based Networks, YOLO-based Networksを採用
 - 動作はエッジデバイス上で行うため、量子化での推論などの高速化を行った
 
 ## エッジデバイスのセットアップ
 - 実際に動作を行うエッジデバイスの環境構築を行った
-- 処理性能が必要なDense-UNetに関してはP100相当のGPUを積んだものを採用した
+- 処理性能が必要なSemantic Segmentationに関してはP100相当のGPUを積んだものを採用した
 - 比較的低負荷で実行できるYOLOv3に関してはJetsonに実装を行った
 
 ### プロトタイプ実装
