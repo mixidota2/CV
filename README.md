@@ -1,6 +1,4 @@
 # mixidota2 CV
-## Machine Learning Engineer
-
 ## Work Experience
 ### Machine Learning Engineer
 Booklista Inc.  
