@@ -1,88 +1,36 @@
-# Simple CV  
-- スキル・取り組んだプロジェクトについて纏めています
+# mixidota2 CV
+## Machine Learning Engineer
 
-### Skills
-- Python, Tensorflow, Pytorch, Scikit-learnなどを利用したデータ分析・機械学習プロジェクトの経験
-- git, dockerによるコード管理・環境構築
+## Work Experience
+### Machine Learning Engineer
+Booklista Inc.  
+November 2021 - Present / Tokyo, Japan
+* **Led Recommendation System Insourcing Project**: Fully insourced recommendation systems for multiple e-book services. Managed entire process from business requirements to technology selection, model development, and deployment, resulting in 120% sales increase and 50% shorter development cycles
+* **Algorithm Implementation**: Achieved simple yet versatile recommendation system using vector creation with collaborative filtering (iALS) and vector search
+* **MLOps Infrastructure Development**: Designed experimental and production integrated ML pipeline using Vertex Pipelines. Fully automated model retraining, reducing ML engineer workload by 70%
+* **Company-Wide AI Initiative Promotion**: Identified business challenges through interviews with management and departments (10+ teams). Proposed and developed two high-priority AI solutions
 
+### Analytics Engineer (Concurrent Role - 20%)
+Booklista Inc.  
+* **Data Infrastructure Rebuild**: Revamped data modeling and pipelines using Dataform, reducing analytics report creation time by 60%
+* **Reporting**: Clarified requirements through dialogue with business users and provided data through dashboard creation
+* **Analytics Team Enhancement**: Provided engineering technical support and process improvements to the team
 
-## Dota2というMOBAゲームのデータ分析 
-### 概要
-- Dota2とは主に海外で人気のMOBAと呼ばれるPvPのスタイルのゲームで、esportsに分類されるものの1つ
-- 試合に勝利するにはミクロなプレイスキル、マクロな戦略が必要となる
-- またゲームに対してパッチと呼ばれる仕様変更がコンスタントに実施されるため、それに伴う環境の変化を把握することが求められる
-- 今回はマクロな戦略について、どのような要因が起因して勝利に繋がっているかを分析することを目的とした
-- 尚本プロジェクトは個人的な取り組みである
+### Machine Learning Engineer
+Avinton Japan  
+December 2019 - October 2021 / Tokyo, Japan
+* Developed and implemented road crack detection system using semantic segmentation
+* Implemented and embedded algorithms optimized for vehicle-mounted environments
+* Built prediction models based on time series sensor data
+* Developed tunnel excavation surface condition prediction system using image recognition technology
 
-### 取り組んだ内容
-#### データの取得
-- 必要になる試合のテーブルデータをAPIから取得
-- 取得したデータは整形後GCP上に蓄積し、分析を行う際にBigQueryで集計・export
+## Skills
+**ML/DS**: PyTorch, TensorFlow, LightGBM, Recommendation Systems, Tabular Data Prediction, Time Series Forecasting, ML Pipeline Design, Analysis Design  
+**Languages/DB**: Python, SQL, BigQuery, Snowflake  
+**Cloud/MLOps**: AWS, GCP, Vertex Pipelines, MLflow, W&B, Kubeflow, Terraform  
+**Data Infrastructure**: dbt, Dataform, Batch Process Design, Data Modeling  
+**Other**: Project Management, Requirements Definition, Stakeholder Communication
 
-#### シンプルな分析
-- 集計を行うことにより、単純な統計量データを算出
-- データの分布を可視化するなどの手法による大まかな特性のインサイトを得るようなEDA
-
-#### 更なる解釈のための分析
-- クラスタリングなどの手法を用いて、戦略の種類を可視化
-- word2vecなどの埋め込み表現を応用し、戦略の類似度の表現を実現
-
-### 結果
-- これまで経験的に把握していたゲーム内環境について、定量的に理解することができた
-- これによってエビデンスを持った戦略の意思決定を行うことが可能になり、勝率上昇に貢献した
-- また特定の好みの戦略において勝率が高くなるような方針を定めることも可能になり、プレイヤーとしてのモチベーション維持に繋がった
-
-### 次に活かせる学び・今後
-#### 学び
-- 今回データ収集から分析までを一貫して1人で行うことにより、分析におけるデータフローへの理解が深まった
-- また今回のDota2というドメインは日本ではニッチではあるが、試行内容はビジネスのシーンで一般的に行われている分析と性質は同じだと考えている
-- そのため今回行った分析手法を他のドメインに適応させることで近い価値を出すことができると考えている
-
-#### 今後(Appendix)
-- 分析手法については今回はシンプルな集計がメインであったが、より精度の高い意思決定のために今後因果関係の算出が可能な手法による分析の試行などが考えられる
-- また、今回は試合終了後のデータのみを利用したが、データ収集の過程で試合のすべての情報を時系列のログデータとして収集できることが判明した
-- OpenAIなどは実際にその時系列ログデータを用いて強化学習によるAI作成などを達成している
-- 今回は試合に挑む際の意思決定支援の分析を行ったが、実際には試合中に細かく意思決定を行う必要がある
-そのため、将来的には時系列ログデータを取り扱った分析を試行したい
-
-
-## エッジカメラでのひび検知
-- 車載カメラを使用した道路のひびの自動検知のプロジェクト
-- エッジデバイス上でリアルタイムでの動作をさせることが必要
-- 技術としてはSemantic Segmentation, Object Detectionなど
-
-### 取り組んだ内容
-#### モデル作成
-- Semantic Segmentation, Object Detectionのそれぞれについて実装
-- 動作はエッジデバイス上で行うため、量子化での推論などの高速化
-
-### エッジデバイスのセットアップ
-- 実際に動作を行うエッジデバイスの環境構築
-
-### プロトタイプ実装
-- ユーザーに提供するプロトタイプを実装
-- 簡単なCLIでの提供
-
-
-## 画像分類による工事記録の評価支援
-- 画像処理を使用した工事記録の自動評価支援
-- 画像データから複数の項目について評価を行う
-
-### 取り組んだ内容
-#### 手法選定
-- 項目ごとに適切な手法の検討  
-- 単純な画像処理のみで達成可能なもの・ラベルデータが必要になるもの、など
-
-#### 選定した技術
-- OpenCVによるエッジ検出の結果を使用した回帰
-- 深層学習による画像分類
-- KMeansによるクラスタリング
-
-#### モデリング・評価
-- それぞれの項目についてデータの検証・モデル作成・評価
-- 分析結果をフィードバックし、精度・実装の改善
-
-### プロトタイプの作成
-- GUIから呼び出せる形のスクリプトの実装
-- 汎用的な省メモリな構成での実行も考慮し設計
-
+## Languages
+* Japanese (Native)
+* English (Business level)
