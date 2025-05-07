@@ -9,11 +9,12 @@
 ## 技術スキル
 - **推薦システム開発**
   - 分析設計
-  - アルゴリズム選定・実装
-  - MLパイプライン構築
-  - 推論サーバー開発
+  - アルゴリズム選定・実験・実装
+  - MLパイプライン構築(vertex pipelines, github actions)
+  - 推論サーバー開発(qdrant, cloudrun)
+  - オンライン実績のレポーティング(bigquery, looker)
 - **機械学習ソリューション構築**
-  - LLM APIを活用したアプリケーション開発
+  - LLM APIを活用したアプリケーション開発(kangchain, dify)
 - **データ分析・エンジニアリング**
   - データモデリング(dataform, dbt)
   - バッチ処理開発(python)
